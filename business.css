@@ -1,16 +1,10 @@
 body {
     padding: 0;
     margin: 0;
+    font-family: sans-serif;
 }
 
 /* BUSINESS.HTML */
-
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f8f8f8;
-}
 
 .business-container {
     display: flex;
@@ -29,9 +23,9 @@ body {
 
 .business-title {
     text-align: center;
-    font-size: 32px;
+    font-size: 40px;
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: -5px;
 }
 
 .business-owner-price {
@@ -39,14 +33,20 @@ body {
     justify-content: space-between;
     width: 100%;
     max-width: 300px;
-    font-size: 20px;
-    margin-bottom: 20px;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.business-price {
+    color: green;
+    font-weight: bold;
 }
 
 .description {
-    font-size: 18px;
+    font-size: 15px;
     line-height: 1.5;
-    text-align: center;
+    text-align: left;
+    margin-top: -15px;
 }
 
 .right-column {
@@ -61,17 +61,21 @@ body {
 
 .business-buttons {
     margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    gap: 55px;
 }
 
 button {
-    background: #ff6600;
+    background: darkred;
     color: white;
     border: none;
-    padding: 12px 18px;
-    font-size: 18px;
+    padding: 16px 18px;
+    font-size: 16px;
     cursor: pointer;
     border-radius: 5px;
-    margin: 5px;
+    margin: 0;
 }
 
 button img {
