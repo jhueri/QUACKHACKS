@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Overview</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+    <body>
+        <div class="business-container">
+            <div class="business-title">BUSINESS DETAIL</div>
+            <div class="detail">
+                <div class="image">
+                    <img src="" alt="Cookies">
+                    <div class="business-content">
+                        <h1 class="business-name">CAMPUS COOKIE SHOP</h1>
+                        <div class="price">$5-10</div>
+                        <div class="business-buttons">
+                            <button>Book</button>
+                            <button>
+                                Message
+                                <img src="assets/message-button.png" alt="Message">
+                            </button>
+                        </div>
+                        <div class="description"></div>
+                    </div>
+                </div>
+            </div>
+
+            <script>
+                function showDetail () {
+                    let detail = document.querySelector('.detail');
+                    let productId = new URLSearchParams(window.location.search).get('id');
+                    let thisProduct = products.filter(value => {
+                        return value.id == productId
+                    })[0];
+                    detail.querySelector('.image img').src = thisProduct.image;
+                    detail.querySelector('.name').innerText = thisProduct.name;
+                    detail.querySelector('.price').innerText = '$' + thisProduct.price;
+                    detail.querySelector('.description').innerText = thisProduct.description;
+                }
+            </script>
+        </div>
+    </body>
+</html>
+
+<!--
+<body>
+    <h1>Business Name</h1>
+    <h3>Business Owner</h3>
+    <h3>$10-20</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac volutpat nisl. Suspendisse et dignissim ex, et dapibus mi. Vivamus sed dapibus massa, id volutpat arcu. Suspendisse semper orci orci, quis tristique leo imperdiet a. Donec at eros efficitur, euismod lectus eget, placerat diam. Duis dictum vehicula commodo. Vestibulum maximus eros a urna luctus, vel iaculis mi ultricies. Nullam ullamcorper tincidunt nisl in ultricies. Nulla bibendum sit amet neque vitae laoreet. Proin a viverra dui. Duis ac consequat enim. Aliquam semper, dui vel fringilla pellentesque, sem mauris venenatis purus, a faucibus felis dui nec ex.</p>
+    <button type="button"><a href="https://calendly.com/">Book</a></button>
+    <button type="submit">
+        <img src="assets/message-button.png" alt="Message">
+    </button>
+
+</body>
+-->
