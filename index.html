@@ -26,7 +26,7 @@
             </form>
             
             <p id = "text">Most popular</p>
-            <nav>
+            <nav class="mostpopular">
                 <a href="">Beauty</a>
                 <a href="">Food</a>
                 <a href="">Photography</a>
@@ -35,51 +35,21 @@
         </section>
 
         <div>
-            <p>Business Categories</p>
-            <div>
-                <input type="radio" name="categories" id=""/>
-                <input type="radio" name="categories" id=""/>
-                <input type="radio" name="categories" id=""/>
-                <input type="radio" name="categories" id=""/>
+            <p id = "secondtitle">Business Categories</p>
 
-                <div>
-                    <div>
-                        <div>
-                            <div>
-                                <div>
-                                    <h2>Beauty</h2>
-                                </div>
-                            </div>
-                            <div>
-                                <div>
-                                    <h2>Tutoring</h2>
-                                </div>
-                            </div>
-                            <div>
-                                <div>
-                                    <h2>Media</h2>
-                                </div>
-                            </div>
-                            <div>
-                                <div>
-                                    <h2>Food</h2>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <div class="scrollbutton">
+                <button class="scroll-btn left-btn" onclick="scrollLeftnow()">&#9665;</button>
+                <div class="options">
+                    <div class="description">Beauty</div>
+                    <div class="description">Food</div>
+                    <div class="description">Traveling</div>
+                    <div class="description">Media</div>
+                    <div class="description">Beauty</div>
+                    <div class="description">Food</div>
+                    <div class="description">Traveling</div>
+                    <div class="description">Media</div>
                 </div>
-                <div id="">
-                    <label for=""></label>
-                    <label for=""></label>
-                    <label for=""></label>
-                    <label for=""></label>
-                </div>
-                <div id="">
-                    <label for=""></label>
-                    <label for=""></label>
-                    <label for=""></label>
-                    <label for=""></label>
-                </div>
+                <button class="scroll-btn right-btn" onclick="scrollRightnow()">&#9655;</button>
             </div>
         </div>
 
@@ -88,5 +58,6 @@
             <p>Why us?<br>
             We are a nonprofit organization looking to help Steven students with small businesses</p>
         </section>
+        <script src = "index.js"></script>
     </body>
 </html>
