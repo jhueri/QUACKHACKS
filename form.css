@@ -1,8 +1,18 @@
+@font-face {
+    font-family: 'Custom';
+    src: url(fonts/Custom.ttf);
+}
+
 *{
+    font-family:'Custom', sans-serif;
+    font-weight:bold;
+
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+
 
 html,body{
     height: 100%
@@ -16,15 +26,15 @@ body{
     
 }
 
-#boxes{
-    height: 500px
-}
 .bg-contain {
     background-color: rgba(241, 244, 213, 0.765); 
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.936);
   width: 500px;
+  height: 600px;
+  margin-bottom: 100px;
+
 }
 
 #background {
@@ -38,10 +48,17 @@ body{
     align-items: center;
 }
 
-.bg-contain form{
-
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  height: 40px;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 10px;
 }
 
-.question {
-    margin-bottom: 10px;
 }
