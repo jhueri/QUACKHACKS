@@ -12,9 +12,7 @@
     box-sizing: border-box;
 }
 
-text{
-    margin-bottom: 100px;
-}
+
 
 html,body{
     height: 100%
@@ -35,6 +33,8 @@ body{
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.936);
   width: 500px;
   height: 600px;
+  margin-bottom: 100px;
+
 }
 
 #background {
