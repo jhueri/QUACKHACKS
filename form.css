@@ -1,7 +1,19 @@
+@font-face {
+    font-family: 'Custom';
+    src: url(fonts/Custom.ttf);
+}
+
 *{
+    font-family:'Custom', sans-serif;
+    font-weight:bold;
+
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+text{
+    margin-bottom: 100px;
 }
 
 html,body{
@@ -59,8 +71,8 @@ textarea {
 }
 
 small{
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
-    font-size: 700px;
-    font-weight: bold;
+    font-family: 'Custom', sans-serif;
+    font-size: 15px;
+    font-weight:bold;
     
 }
