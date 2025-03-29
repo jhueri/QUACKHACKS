@@ -1,7 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+}
 .nav_color {
     background-color: darkred;
-    padding: 15px 0;
+    padding: 20px 0;
     display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+}
+
+.nav_title a{
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.nav_title a:hover {
+    color: yellow;
+}
+
+.tagbox{
+    width: 100%;
+    height: 500px;
+    background-image: url(https://www.stevens.edu/_next/image?url=https:%2F%2Fimages.ctfassets.net%2Fmviowpldu823%2F6PIQaMyacd17eDN3M91T9P%2Fa8b5ae5daff3e444d8be58b320c20682%2F332_0001.jpg%3Fw%3D2400%26h%3D1350%26f%3Dcenter%26q%3D80%26fit%3Dfill&w=2400&q=80);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
+}
+
+header {
+    font-size: 55px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 1px 1px 0 darkred;
+    padding: 30px;
+}
+
+.tagbox form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.tagbox input[type="text"] {
+    width: 90%;
+    padding: 12px;
+    border: 1px solid darkred;
+    border-radius: 5px;
+}
+
+#text{
+    color: white;
+    font-size: 20px;
+    text-shadow: 1px 1px 0 darkred;
+    padding: 10px;
+    text-decoration: underline;
 }
