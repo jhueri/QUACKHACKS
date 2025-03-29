@@ -5,13 +5,6 @@ body {
 
 /* BUSINESS.HTML */
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f8f8f8;
-}
-
 .business-container {
     display: flex;
     width: 100%;
@@ -43,6 +36,11 @@ body {
     margin-bottom: 20px;
 }
 
+.business-price {
+    color: green;
+    font-weight: bold;
+}
+
 .description {
     font-size: 18px;
     line-height: 1.5;
@@ -61,10 +59,13 @@ body {
 
 .business-buttons {
     margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
 }
 
 button {
-    background: #ff6600;
+    background: darkred;
     color: white;
     border: none;
     padding: 12px 18px;
