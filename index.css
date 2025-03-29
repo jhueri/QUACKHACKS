@@ -1,0 +1,7 @@
+.nav_color {
+    background-color: darkred;
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
