@@ -8,21 +8,19 @@
 </head>
 <body id="background">
     <div class="bg-contain">
-        <div id="form-section">
-    <form action="https://formsubmit.co/thepondstevens@gmail.com" method="POST">
-        <input type="hidden" name="_next" value="thanks.html">
-
-    <label for="business_name" class="question">Business Name:</label><br>
+    <form action="thanks.html" method="GET">
+    
+    <label for="business_name">Business Name:</label><br>
      <input type="text" id="business_name" name="business_name" required><br><br>
 
-    <label for="name" class="question">Name:</label><br>
+    <label for="name">Name:</label><br>
      <input type="text" id="name" name="name" required><br><br>
 
     <label for="email" class="question">Email:</label><br>
+     <input type="email" id="email" name="email" required><br><br>
     
-    <input type="email" id="email" name="email" required><br><br>
-    
-    <label for="category" class="question">Category:</label><br>
+    <label for="category">Category:</label><br>
+
      <select name="category" id="Category" required>
         <option value="">Choose...</option>
         <option value="Beauty">Beauty</option>
@@ -31,7 +29,8 @@
         <option value="Food">Food</option>
      </select><br><br>
 
-    <label for="description" class="question">Description:</label><br>
+
+    <label for="description">Description:</label><br>
     <textarea id="description" name="description" rows="4" cols="50" maxLength="250"></textarea><br><br>
     <small><span id="charCount">0</span>/250 characters</small><br><br>
 
