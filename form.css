@@ -85,7 +85,7 @@ textarea {
 
 #description{
     height: 80px;
-    margin-bottom: -25px;
+    margin-bottom: -23px;
 }
 
 small{
@@ -95,6 +95,28 @@ small{
     margin-top: -503px;
     
 }
+.back-button {
+    position: fixed; /* position relative to the page */
+    top: 5px;          /* distance from top edge */
+    left: 265px;         /* distance from left edge */
+    
+    padding: 8px 16px;  /* controls button size, adjust as needed */
+    font-size: 16px;    /* adjust font size as needed */
+    
+    background-color: darkred;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    z-index: 1000; /* Ensures button stays on top*/
+  }
+  
+  .back-button:hover {
+    background-color: gray;
+  }
+  
 
 button[type="submit"] {
     width: 70%;                  
@@ -114,6 +136,7 @@ button[type="submit"] {
   button{
     margin-left: 55px;
   }
+  
   
   .custom-file-upload {
     display: inline-block;
