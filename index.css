@@ -228,6 +228,10 @@ header {
     box-sizing: border-box;
     overflow-x: hidden;
 }
+a {
+    text-decoration: none; /* Removes underline */
+    color: inherit;        /* Ensures text color remains unchanged */
+}
 
 .thirdbox{
     width: 100%;
