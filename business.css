@@ -367,7 +367,6 @@ button img {
     flex-direction: column;
     align-items: flex-end;
     margin-left: 0px;
-    font-size: 40px;
 }
 
 .name-user strong {
@@ -401,4 +400,57 @@ button img {
     font-size: 1rem;
     color: black;
     line-height: 1.6;
+}
+
+.write-review-section {
+    margin: 30px auto; 
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: left;
+    width: 80%; 
+    max-width: 800px; 
+    box-sizing: border-box; 
+}
+
+.write-review-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    text-align: center; 
+    margin-top: -5px;
+}
+
+#reviewForm input,
+#reviewForm textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#reviewForm button {
+    background-color: darkred;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#reviewForm button:hover {
+    background-color: #8B0000;
+}
+
+#reviewForm button{
+    display: block; 
+    margin: 10px auto; 
+    background-color: darkred;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: fit-content; 
 }
