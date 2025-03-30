@@ -114,6 +114,10 @@ body {
     font-weight: bold;
     color: rgb(78, 78, 78); /* Adjust color as needed */
   }
+  .title-link:hover {  
+    color: darkred;  
+    border-radius: 15px;
+}
   
   .price-range {
     font-size: 20px;

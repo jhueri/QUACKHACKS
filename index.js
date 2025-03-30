@@ -16,3 +16,12 @@ function scrollRightnow() {
 
 leftButton.addEventListener("click", scrollLeftnow);
 rightButton.addEventListener("click", scrollRightnow);
+
+if (localStorage.getItem("user")) {
+    document.body.innerHTML = "<h1>Welcome, Stevens Student!</h1> <button onclick='logout()'>Continue</button>";
+}
+
+function logout() {
+    localStorage.removeItem("user");
+    window.location.reload();
+}
