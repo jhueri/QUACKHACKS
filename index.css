@@ -9,6 +9,11 @@
     font-family: 'Custom';
     box-sizing: border-box;
 }
+
+body{
+    font-family: 'Custom';
+}
+
 /* NAV BAR */
 
 .navbar {
@@ -222,6 +227,10 @@ header {
     padding: 40px;
     box-sizing: border-box;
     overflow-x: hidden;
+}
+a {
+    text-decoration: none; /* Removes underline */
+    color: inherit;        /* Ensures text color remains unchanged */
 }
 
 .thirdbox{
