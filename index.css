@@ -7,6 +7,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Custom';
+    box-sizing: border-box;
 }
 .nav_color {
     background-color: darkred;
@@ -27,10 +28,21 @@
     color: yellow;
 }
 
+button {
+    background-color: darkred;
+    border-radius: 5px;
+    border: none;
+
+}
+.searching{
+    width: 20px;
+    height: 20px;
+    background-color:darkred;
+}
 .tagbox{
     width: 100%;
     height: 500px;
-    background-image: url(https://www.stevens.edu/_next/image?url=https:%2F%2Fimages.ctfassets.net%2Fmviowpldu823%2F6PIQaMyacd17eDN3M91T9P%2Fa8b5ae5daff3e444d8be58b320c20682%2F332_0001.jpg%3Fw%3D2400%26h%3D1350%26f%3Dcenter%26q%3D80%26fit%3Dfill&w=2400&q=80);
+    background-image: url(assets/stevenscampus.jpeg);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -44,7 +56,7 @@ header {
     font-size: 55px;
     font-weight: bold;
     color: white;
-    text-shadow: 1px 1px 0 darkred;
+    text-shadow: 5px 5px 0 darkred;
     padding: 30px;
 }
 
@@ -75,6 +87,11 @@ header {
     justify-content: center;
     gap: 20px;
     margin-top: 5px;
+}
+
+.mostpopular a:hover{
+    background-color: lightyellow;
+    color:darkred;
 }
 
 .mostpopular a {
@@ -170,6 +187,7 @@ header {
     color: white;
     text-shadow: 1px 1px 0 darkred;
     padding: 30px;
+    margin-top: 0;
 }
 
 .secondbox{
@@ -187,8 +205,14 @@ header {
 
 .thirdbox{
     width: 100%;
-    height:500px;
+    height:800px;
     background-color: darkred;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    text-align: center;
 }
 
 .description-image {
@@ -214,10 +238,19 @@ header {
     text-align: center;
     font-weight: bold;
     color: rgb(205, 205, 126);
+    margin-bottom: 20px;
 }
 
 #summary{
     background-color: lightyellow;
-    font-size: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid darkred;
+    font-size: 18px;
     text-align: center;
+    font-weight: bold;
+    max-width: 80%;
+    margin: 10px auto;
+    display: block;
+    width: 100%;
 }
