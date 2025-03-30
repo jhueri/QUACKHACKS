@@ -3,6 +3,51 @@
     src: url(fonts/Custom.ttf);
 }
 
+/* NAV BAR */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: darkred;  
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; 
+}
+
+.navbar .logo img {
+    height: 50px;  
+}
+
+.navbar-links {
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+}
+
+.navbar-link {
+    color: white; 
+    text-decoration: none; 
+    font-size: 16px;
+    font-weight: bold;
+    padding: 8px 15px; 
+    transition: background-color 0.3s ease;
+}
+
+.navbar-link:hover {
+    background-color: rgba(255, 255, 255, 0.2);  
+    color: white;  
+    border-radius: 15px;
+}
+
+body {
+    margin-top: 60px;  
+}
+
+
 body, html {
     padding: 0;
     margin: 0;
@@ -19,6 +64,7 @@ body, html {
     width: 100%;
     padding: 40px;
     box-sizing: border-box;
+    padding-top: 100px;
 }
 
 .left-column {
