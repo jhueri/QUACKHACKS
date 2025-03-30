@@ -32,15 +32,6 @@ body {
     margin-bottom: -5px;
 }
 
-.business-owner-price {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 300px;
-    font-size: 25px;
-    margin-bottom: 10px;
-}
-
 .business-price {
     color: green;
     font-weight: bold;
@@ -158,4 +149,31 @@ button img {
 
 .dot.active {
     background: white;
+}
+
+.profile-picture {
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+}
+
+.business-owner-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    width: 100%;
+    max-width: 400px;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.profile-picture {
+    border-radius: 100%;
+    width: 40px; 
+    height: 40px;
+    margin-right: -100px; 
+}
+
+.business-owner {
+    margin-right: 10px;
 }
