@@ -1,0 +1,62 @@
+@font-face {
+    font-family: 'Custom';
+    src: url('fonts/Custom.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Custom', Arial, sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+    background-image: url("assets/signin-background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.welcome-container {
+    background-color: rgba(255, 255, 255, 0.8); 
+    color: #333; 
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    width: 80%;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.return-btn {
+    display: inline-block;
+    background-color: #8b0000; 
+    color: white;
+    text-decoration: none;
+    padding: 12px 24px;
+    font-size: 18px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.return-btn:hover {
+    background-color: #a00;
+    transform: scale(1.05); 
+}
+
+.return-btn:active {
+    transform: scale(0.98); 
+}
