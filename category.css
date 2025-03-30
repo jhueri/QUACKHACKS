@@ -3,18 +3,46 @@
 }
 
 
+.nav_color {
+    background-color: darkred;
+    padding: 20px 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+}
+.nav_title a{
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.nav_title a:hover {
+    color: yellow;
+}
+
+body {
+    background-color: rgb(78, 78, 78);
+}
+
+.top {
+    color: white;
+    margin: 20px;
+}
+
 .section {
+    background-color: darkred;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
     padding: 20px;
-    background-color: white; /* Dark red */
-  }
+    border: 3px solid darkred
+ }
+ .box {
 
-  .box {
-    background-color: rgb(220, 220, 220); /* White background */
-    border: 1px solid #ccc;
+    background-color: whitesmoke;
+    border: 3px solid darkred;
     border-radius: 10px;
     padding: 15px;
     padding-bottom: 50px;
@@ -27,7 +55,7 @@
     width: 100%;
     height: auto;
     border-radius: 8px;
-    margin-top: 50px; /* Adds space below the image */
+    margin-top: 40px; /* Adds space below the image */
 
   }
 
@@ -36,7 +64,7 @@
   }
 
   .box p {
-    font-size: 14px;
+    font-size: 17px;
     color: #555;
   }
 
@@ -54,6 +82,6 @@
   }
   
   .price-range {
-    font-size: 14px;
+    font-size: 20px;
     color: #666; /* Adjust color as needed */
   }
