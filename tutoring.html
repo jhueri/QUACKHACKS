@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Category - Tutoring</title>
+    <link rel="stylesheet" href="category.css">
+  </head>
+
+<body>
+     <!--NAV BAR-->
+     <nav class="navbar">
+        <a href="index.html" class="logo">
+            <img src="assets/logo.png" alt="Logo" />
+        </a>
+        <ul class="navbar-links">
+            <li><a href="sign-in.html" class="navbar-link">Sign In</a></li>
+            <li><a href="form.html" class="navbar-link">Add Your Business</a></li>
+        </ul>
+    </nav>
+
+      <div class="top">
+      <h1 id="heading">Tutoring</h1>
+      <p>Take a look around</p>
+    </div>
+
+    <div class="section">
+      <div class="box">
+        <div class = "title-price">
+            <!--Title of Business -->
+            <a href = "business.html" class = "title-link">Nelson.net</a>
+            <!--Range of Prices -->
+            <span class="price-range">$5/hr - $10/hr</span>
+        </div>
+          <!--Show the first 100 words of the description-->
+          <p class="description" data-full="Hey there! Feel free to come to me with any questions you might have about the course or just about things in general. Whether you're struggling with a coding problem or need some advice on managing your time, I'm here to help however I can. I'm currently in my second year as a Computer Science major, so I can definitely relate to the challenges that come with keeping up with assignments, projects, and everything else. When I'm not diving into code or working on assignments, I enjoy spending time with my family— they keep me grounded and remind me of what really matters. I also love chatting with friends or fellow students, so don't hesitate to reach out if you want to talk about anything, whether it’s tech-related or just some casual conversation.">
+          </p>          
+          <img src="assets/nelson0f.jpg" alt="Edit" class="category-images">
+        </div> 
+
+      <div class="box">
+          <div class = "title-price">
+              <!--Title of Business -->
+              <a href = "business.html" class = "title-link">Stacy's Outlet</a>
+              <!--Range of Prices -->
+              <span class="price-range">$1/mo - $10/mo</span>
+          </div>
+            <!--Show the first 75 words of the description-->
+            <p class="description" data-full="This business provides tailored social media management and content creation services for small businesses, influencers, and startups looking to build or improve their online presence. Services include content planning, post scheduling, graphic design, video production, social media strategy, influencer partnerships, and analytics reports. The goal is to help clients grow their audience, increase engagement, and drive sales through effective social media campaigns.">
+            </p>          
+            <img src="assets/socialMed.png" alt="socials" class="category-images">
+        </div>
+
+      <div class="box">
+        <div class = "title-price">
+            <!--Title of Business -->
+            <a href = "business.html" class = "title-link"> Lens & Light </a> 
+            <!--Range of Prices -->
+            <span class="price-range">$15 - $50</span>
+        </div>
+          <!--Show the first 100 words of the description-->
+          <p class="description" data-full="Lens & Light specializes in capturing the true essence of your moments through artistic and high-quality imagery. Whether it's a corporate event, family photoshoot, or personal portraits, this business aims to deliver stunning and timeless photos that tell a story. With an eye for detail and a passion for creativity, the photographer focuses on natural lighting, candid moments, and editorial-style shots.">
+          </p>          
+          <img src="assets/cameraR0.jpg" alt="Cam" class="category-images">
+        </div>
+
+        <div class="box">
+          <div class = "title-price">
+              <!--Title of Business -->
+              <a href = "business.html" class = "title-link">MotionCraft Studios</a>
+              <!--Range of Prices -->
+              <span class="price-range">$25 - $150</span>
+          </div>
+            <!--Show the first 100 words of the description-->
+            <p class="description" data-full="MotionCraft Studios brings a fresh, dynamic approach to animation. The studio creates eye-catching, story-driven animations for advertisements, games, social media, and more. With expertise in both traditional and digital animation techniques, MotionCraft Studios focuses on delivering visuals that make an impact. The team specializes in bringing creative ideas to life with a focus on character-driven storytelling and visually stunning motion">
+            </p>          
+            <img src="assets/animator0.jpg" alt="anim" class="category-images">
+          </div>    
+  
+
+          <script>
+            const descriptions = document.querySelectorAll('.description');
+          
+            descriptions.forEach(desc => {
+              const fullText = desc.getAttribute('data-full');
+              const words = fullText.split(' ');
+              const shortText = words.slice(0, 75).join(' ') + '...';
+          
+              // Start with the short version
+              desc.innerHTML = shortText;
+          
+              // Create the toggle link
+              const toggleLink = document.createElement('a');
+              toggleLink.href = '#';
+              toggleLink.textContent = ' Read more';
+
+
+
+
+
+              toggleLink.style.color = '#8B0000';
+              toggleLink.style.cursor = 'pointer';
+          
+              let expanded = false;
+          
+              toggleLink.onclick = function (e) {
+                e.preventDefault();
+                if (expanded) {
+                  desc.innerHTML = shortText;
+                  toggleLink.textContent = ' Read more';
+                } else {
+                  desc.innerHTML = fullText;
+                  toggleLink.textContent = ' Show less';
+                }
+                desc.appendChild(toggleLink);
+                expanded = !expanded;
+              };
+          
+              desc.appendChild(toggleLink);
+            });
+          </script>
+          
+          
+      </div>
+
+</body>
+</html>
