@@ -424,7 +424,7 @@ button img {
 #reviewForm textarea {
     width: 100%;
     padding: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
@@ -453,4 +453,17 @@ button img {
     border-radius: 4px;
     cursor: pointer;
     width: fit-content; 
+}
+
+.star-rating {
+    display: inline-flex;
+    margin-bottom: 15px;
+}
+
+.star {
+    cursor: pointer;
+}
+
+.filled-star {
+    display: none; 
 }
