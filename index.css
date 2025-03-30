@@ -92,16 +92,16 @@ header {
     font-size: 55px;
     font-weight: bold;
     text-align: center;
-    padding: 20px;
+    margin-bottom: 95px;
 }
 
 .options{
-    max-height:120px;
+    max-height:500px;
     border: 1px solid white;
     display: flex;
     overflow-x: auto;
-    scroll-behavior: smooth;  
-    max-width: 60%;
+    scroll-behavior: smooth; 
+    width: 100%;
     white-space: nowrap;
     padding: 5px;
 }
@@ -109,9 +109,9 @@ header {
     display: none;
 }
 .options .description{
-    min-width: 150px;
-    height: 110px;
-    line-height: 110px;
+    min-width: 180px;
+    height: 150px;
+    line-height: 150px;
     text-align: center;
     background-color: darkred;
     color: white;
@@ -119,24 +119,61 @@ header {
     border-radius: 8px;
     margin-right: 8px;
     cursor: pointer;
+    font-size: 30px;
 
+}
+
+.options .description:hover {
+    background-color: rgba(139, 0, 0, 0.5);
+    color: white;
 }
 
 .scrollbutton{
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 10px;
+    justify-content: space-between;
     position: relative;
+    width: 80%;
 }
 
 .scroll-btn{
-    background-color: darkred;
+    background-color: black;
     color: white;
     border: none;
     cursor: pointer;
-    padding: 10px 15px;
-    font-size: 19px;
-    border-radius: 5px;
-    
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.secondheader{
+    font-size: 55px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 1px 1px 0 darkred;
+    padding: 30px;
+}
+
+.secondbox{
+    width: 100%;
+    height: 500px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 40px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.thirdbox{
+    width: 100%;
+    height:500px;
+    background-color: darkred;
 }
