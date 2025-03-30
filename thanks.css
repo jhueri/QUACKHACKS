@@ -1,0 +1,43 @@
+@font-face {
+    font-family: 'Custom';
+    src: url(fonts/Custom.ttf);
+}
+
+*{
+    font-family:'Custom', sans-serif;
+    font-weight:bold;
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#background {
+    background-image: url('assets/thanks-pic.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.bg-contain {
+    background-color: rgba(89, 187, 192, 0.765); 
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.936);
+  width: 500px;
+  height: 600px;
+}
+
+
+header {
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 1px 1px 0 darkred;
+    padding: 30px;
+}
