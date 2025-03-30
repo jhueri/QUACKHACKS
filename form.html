@@ -6,39 +6,45 @@
     <title>Form</title>
     <link rel="stylesheet" href="form.css">
 </head>
-<body id="background">
-    <div class="bg-contain">
-    <form action="thanks.html" method="GET">
+    <body id="background">
+        <div class="parent-container">
+            <div class="bg-contain">
+                <form action="thanks.html" method="GET">
     
-    <label for="business_name">Business Name:</label><br>
-     <input type="text" id="business_name" name="business_name" required><br><br>
+                <label for="business_name">Business Name:</label><br>
+                    <input type="text" id="business_name" name="business_name" required><br><br>
 
-    <label for="name">Name:</label><br>
-     <input type="text" id="name" name="name" required><br><br>
-
-    <label for="email" class="question">Email:</label><br>
-     <input type="email" id="email" name="email" required><br><br>
+                <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name" required><br><br>
+                
+                <label for="email" class="question">Email:</label><br>
+                    <input type="email" id="email" name="email" required><br><br>
     
-    <label for="category">Category:</label><br>
+                <label for="category">Category:</label><br>
 
-     <select name="category" id="Category" required>
-        <option value="">Choose...</option>
-        <option value="Beauty">Beauty</option>
-        <option value="Tutoring">Tutoring</option>
-        <option value="Media">Media</option>
-        <option value="Food">Food</option>
-     </select><br><br>
+                     <select name="category" id="Category" required>
+                       <option value="">Choose...</option>
+                       <option value="Beauty">Beauty</option>
+                       <option value="Tutoring">Tutoring</option>
+                       <option value="Media">Media</option>
+                       <option value="Food">Food</option>
+                     </select><br><br>
 
 
-    <label for="description">Description:</label><br>
-    <textarea id="description" name="description" rows="4" cols="50" maxLength="250"></textarea><br><br>
-    <small><span id="charCount">0</span>/250 characters</small><br><br>
+                <label for="description">Description:</label><br>
+                 <textarea id="description" name="description" rows="4" cols="50" maxLength="250"></textarea><br><br>
+                 <small><span id="charCount">0</span>/250 characters</small><br><br>
 
-    <input type="text" name="_honey" style="display:none">
+                 <label for="image">Upload an Image:</label><br>
+                     <input type="file" id="image" name="image" accept="image/*"><br><br>
 
-    <button type="submit">Submit</button>
-    </form>
-    </div>
+
+                     <input type="text" name="_honey" style="display:none">
+
+                 <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
 
     <script>
         const descriptionInput = document.getElementById('description');
@@ -48,5 +54,5 @@
             charCount.textContent = descriptionInput.value.length;
         });
     </script>
-</body>
+    </body>
 </html>
