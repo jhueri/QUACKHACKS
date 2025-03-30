@@ -35,12 +35,13 @@ body{
 /*form page itself*/
 .bg-contain {
     background-color: rgba(241, 244, 213, 0.765); 
-  padding: 30px;
+  padding: 20px;
   border-radius: 4px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.936);
   width: auto;
   height: auto;
   margin-top: 4px;
+  margin-bottom: 3px;
 
 }
 
@@ -114,5 +115,28 @@ button[type="submit"] {
     margin-left: 55px;
   }
   
- 
+  .custom-file-upload {
+    display: inline-block;
+    padding: 5px 7px; /*size of choose file box*/
+    cursor: pointer;
+    background-color: gray; /* Match your submit button's color */
+    color: white;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+
+    position: relative; /* enables coordinate editing */
+    top: -40px; /* move upwards by 10px */
+  }
+  
+  .custom-file-upload:hover {
+    background-color: darkred;
+    color: white;
+  }
+  
+  .custom-file-upload input[type="file"] {
+    display: none; /* hides the default input visually */
+  }
+  
 

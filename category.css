@@ -11,25 +11,49 @@
 }
 
 
-.nav_color {
-    background-color: darkred;
-    padding: 20px 0;
+/* NAV BAR */
+
+.navbar {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
-    width: 100%;
-}
-.nav_title a{
-    color: white;
-    margin: 0 15px;
-    text-decoration: none;
+    padding: 10px 20px;
+    background-color: darkred;  
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; 
 }
 
-.nav_title a:hover {
-    color: yellow;
+.navbar .logo img {
+    height: 50px;  
 }
+
+.navbar-links {
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+}
+
+.navbar-link {
+    color: white; 
+    text-decoration: none; 
+    font-size: 16px;
+    font-weight: bold;
+    padding: 8px 15px; 
+    transition: background-color 0.3s ease;
+}
+
+.navbar-link:hover {
+    background-color: rgba(255, 255, 255, 0.2);  
+    color: white;  
+    border-radius: 15px;
+}
+
 
 body {
+    padding-top: 60px;
     background-color: rgb(78, 78, 78);
 }
 
