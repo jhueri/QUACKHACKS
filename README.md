@@ -23,7 +23,7 @@ The **Pond** is an eCommerce website designed for Stevens students to promote th
 
 - **Reviews & Ratings**: Students can write reviews and rate businesses, helping others find the best services on campus.
 
-- **Sign In**: (If applicable) Stevens students can sign in to access more features like leaving reviews or requesting to add their business.
+- **Sign In**: Stevens students can sign in to access more features like leaving reviews or requesting to add their business.
 
 - **Interactive Interface**: A clean, user-friendly design with responsive features for desktop devices.
 
