@@ -4,6 +4,11 @@ function previewImage(showing){
 
     reader.onload = function theResult(result){
         const imgElement = document.getElementById('previewImage');
-        const container = document.getElementById
-    }
+        const container = document.getElementById('imageUploadcontainer');
+            imgElement.src = result. target.result;
+            imgElement.style.display = 'block';
+            container. classList.add ('has-image');
+            
+    };
+    
 }
