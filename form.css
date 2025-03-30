@@ -25,24 +25,32 @@ body{
     align-items: center;
     
 }
+.parent-container {
+    display: flex;
+    justify-content: center; /* horizontal center */
+    align-items: center; /* vertical center */
+    height: 100%;
+}
 
+/*form page itself*/
 .bg-contain {
     background-color: rgba(241, 244, 213, 0.765); 
   padding: 30px;
   border-radius: 4px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.936);
-  width: 500px;
-  height: 600px;
+  width: auto;
+  height: auto;
+  margin-top: 4px;
 
 }
 
 
 #background {
     background-image: url('assets/form-pic.jpg');
-    background-size: cover;
+    background-size:cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100%;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -75,7 +83,7 @@ textarea {
 }
 
 #description{
-    height: 90px;
+    height: 80px;
     margin-bottom: -25px;
 }
 
@@ -106,4 +114,5 @@ button[type="submit"] {
     margin-left: 55px;
   }
   
+ 
 
