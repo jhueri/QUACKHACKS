@@ -1,5 +1,7 @@
 # The Pond - 2025 QuackHacks Hackathon Project
 ## Stevens Institute of Technology 🦆
+## Team Name: The Pond
+## Team Members: Felicity Tabia, Marilyn Anderson, Naima Sana, 
 
 The **Pond** is an eCommerce website designed for Stevens students to promote their small businesses and support other students’ ventures on campus. It acts as a marketplace for students to showcase their services or products, and it helps the Stevens community connect and shop locally. Whether you’re a tutor, a creator, or a food vendor, The Pond is here to bring together small businesses from various categories to help them thrive on campus.
 
@@ -31,14 +33,6 @@ The **Pond** is an eCommerce website designed for Stevens students to promote th
 - **HTML**: Structure and content of the website.
 - **CSS**: Styling of the website.
 - **JavaScript**: Interactivity, such as form handling and dynamic content updates.
-
-## 👨🏻‍💻 Getting Started
-
-1. Visit the live website: [The Pond at Stevens](https://thepondatstevens.netlify.app)
-
-2. Browse businesses by category, request to add your own business, and leave reviews for your favorite student-run services!
-
-3. If you'd like to contribute or make changes to the project, feel free to fork the repository and create a pull request with your modifications.
 
 ## 🔮 Future Enhancements
 While The Pond is live and functional, there are several potential features we plan to add or improve:
