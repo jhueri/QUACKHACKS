@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Category - Media</title>
+    <link rel="stylesheet" href="category.css">
+  </head>
+
+<body>
+    <nav> 
+        <div class="nav_color">
+          <nav class = "nav_title">
+              <a href= "">Sign in</a>
+              <a href= "">Join</a>
+          </nav>
+      </div>
+    </nav>
+
+      <div class="top">
+      <h1 id="heading">Media</h1>
+      <p>Take a look around</p>
+    </div>
+
+    <div class="section">
+      <div class="box">
+        <div class = "title-price">
+            <!--Title of Business -->
+            <a href = "business.html" class = "title-link">Andrey's Edits</a>
+            <!--Range of Prices -->
+            <span class="price-range">$5 - $10</span>
+        </div>
+          <!--Show the first 100 words of the description-->
+          <p class="description" data-full="Welcome to Andrey's Edits, your go-to destination for perfecting your digital creations! Whether you're a content creator, business owner, or just someone looking to refine your personal photos and videos, we provide expert editing services that bring your ideas to life. From photo retouching and video enhancements to graphic design and color correction, we make sure every detail is flawless. With a keen eye for precision and a passion for creativity, we ensure that your edits stand out and shine. Email Andrey's Edits today and let us help you create stunning visuals that tell your unique story.">
+          </p>          
+          <img src="assets/edits.jpg" alt="Edit" class="category-images">
+        </div> 
+
+      <div class="box">
+          <div class = "title-price">
+              <!--Title of Business -->
+              <a href = "business.html" class = "title-link">Deigo's Snack Shop</a>
+              <!--Range of Prices -->
+              <span class="price-range">$1 - $10</span>
+          </div>
+            <!--Show the first 75 words of the description-->
+            <p class="description" data-full="Welcome to Deigo's Snack Shop, your neighborhood convenience store! Whether you're grabbing a quick snack, picking up essentials, or looking for a little something extra, we’ve got you covered. We pride ourselves on providing a friendly, local shopping experience with everything you need right around the corner. From snacks and beverages, to household items, our store is stocked with quality products at affordable prices. Stop by anytime – I'm always happy to see you!">
+            </p>          
+            <img src="assets/snackR.png" alt="Shop" class="category-images">
+        </div>
+
+      <div class="box">
+        <div class = "title-price">
+            <!--Title of Business -->
+            <a href = "business.html" class = "title-link"> Zumrut's Better Cookie</a> 
+            <!--Range of Prices -->
+            <span class="price-range">$0.50 - $8</span>
+        </div>
+          <!--Show the first 100 words of the description-->
+          <p class="description" data-full="Welcome to Zumrut's Better Cookie Shop, where every bite is a sweet escape! Our shop is dedicated to crafting the finest, most delicious cookies in town, using only the best ingredients. From classic chocolate chip to inventive seasonal flavors, each cookie is baked with love and care to ensure a perfect balance of texture and taste. Whether you’re in the mood for a soft, chewy treat or a crispy, golden delight, Zumrut's has the perfect cookie to satisfy your cravings. Come visit us for a warm, fresh-out-of-the-oven experience, or grab a box to take home. At Zumrut’s, we believe in making life a little sweeter, one cookie at a time!">
+          </p>          
+          <img src="assets/Bcookie.jpg" alt="betCookie" class="category-images">
+        </div>
+
+        <div class="box">
+          <div class = "title-price">
+              <!--Title of Business -->
+              <a href = "business.html" class = "title-link">Meat Sacks</a>
+              <!--Range of Prices -->
+              <span class="price-range">$2 - $4</span>
+          </div>
+            <!--Show the first 100 words of the description-->
+            <p class="description" data-full=" Welcome to Meat Sacks, where every bite takes you on a flavorful journey! We specialize in crafting the finest empanadas filled with a variety of savory ingredients, from seasoned meats and vegetables to delicious cheese and spices. Whether you're craving a traditional recipe or something with a modern twist, our empanadas are made fresh daily, ensuring that every pastry is crispy on the outside and bursting with flavor on the inside. Perfect for a quick snack, a meal on the go, or a treat to share with friends and family, Meat Sacks offers a warm, welcoming atmosphere where you can enjoy the rich taste of authentic empanadas with every bite. Come in, grab a bite, and taste the tradition!">
+            </p>          
+            <img src="assets/meatemp.jpg" alt="sackMeat" class="category-images">
+          </div>    
+  
+
+          <script>
+            const descriptions = document.querySelectorAll('.description');
+          
+            descriptions.forEach(desc => {
+              const fullText = desc.getAttribute('data-full');
+              const words = fullText.split(' ');
+              const shortText = words.slice(0, 75).join(' ') + '...';
+          
+              // Start with the short version
+              desc.innerHTML = shortText;
+          
+              // Create the toggle link
+              const toggleLink = document.createElement('a');
+              toggleLink.href = '#';
+              toggleLink.textContent = ' Read more';
+              toggleLink.style.color = '#8B0000';
+              toggleLink.style.cursor = 'pointer';
+          
+              let expanded = false;
+          
+              toggleLink.onclick = function (e) {
+                e.preventDefault();
+                if (expanded) {
+                  desc.innerHTML = shortText;
+                  toggleLink.textContent = ' Read more';
+                } else {
+                  desc.innerHTML = fullText;
+                  toggleLink.textContent = ' Show less';
+                }
+                desc.appendChild(toggleLink);
+                expanded = !expanded;
+              };
+          
+              desc.appendChild(toggleLink);
+            });
+          </script>
+          
+          
+      </div>
+
+</body>
+</html>
