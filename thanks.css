@@ -3,12 +3,11 @@
     src: url(fonts/Custom.ttf);
 }
 
-*{
-    font-family:'Custom', sans-serif;
-    font-weight:bold;
-
+html,body{
+    height: 100%;
     margin: 0;
     padding: 0;
+    font-family:'Custom', sans-serif;
     box-sizing: border-box;
 }
 
@@ -17,27 +16,52 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100%;
+
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100%;
 }
-
 
 .bg-contain {
-    background-color: rgba(89, 187, 192, 0.765); 
-  padding: 30px;
+  background-color: rgba(139, 0, 0, 0.596); 
+  padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.936);
-  width: 500px;
-  height: 600px;
-}
+  text-align: center;
 
+}
 
 header {
-    font-size: 50px;
-    font-weight: bold;
+    font-size: 35px;
     color: white;
-    text-shadow: 1px 1px 0 darkred;
-    padding: 30px;
+    border-color: darkred;
+    text-shadow: 5px 1px 0 darkred;
+    margin-bottom: 20px;
 }
+
+button{
+    width: 200px;                  
+    padding: 15px 20px;           
+    background-color: white;    
+    color: darkred;               
+    font-size: 16px;    
+    font-weight: bold;         
+    border: none;                 
+    border-radius: 6px;           
+    cursor: pointer;              
+    transition: background 0.3s ease;
+
+    align-self: flex-end;
+    margin-left: 150px;
+    margin-top: 12px;
+
+
+  }
+
+    button:hover {
+    background-color: darkred;
+    color:white;
+  }
+ 
+   

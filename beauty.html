@@ -23,7 +23,6 @@
     </div>
 
     <div class="section">
-      
       <div class="box">
         <div class = "title-price">
             <!--Title of Business -->
@@ -35,29 +34,47 @@
           <p class="description" data-full="At Nail Nirvana, we focus on flawless manicures and pedicures that cater to your personal style. From classic, clean looks to trendy nail art, we offer a wide range of services to meet your needs. Our expert nail artists use high-quality products to ensure long-lasting results, and we pride ourselves on our attention to detail. Whether you're prepping for a special event or treating yourself to a relaxing spa day, we guarantee a polished experience that leaves you feeling confident and fabulous. Our comfortable atmosphere and friendly service ensure every visit is a memorable one. Let us perfect your nails!">
           </p>          
           <img src="assets/nails.png" alt="Nails" class="category-images">
+        </div> 
+
+      <div class="box">
+          <div class = "title-price">
+              <!--Title of Business -->
+              <a href = "business.html" class = "title-link">Hair Envy</a>
+              <!--Range of Prices -->
+              <span class="price-range">$25 - $120</span>
+          </div>
+            <!--Show the first 75 words of the description-->
+            <p class="description" data-full="Hair Envy is your go-to destination for hair transformations that turn heads. Whether you're looking for a fresh cut, vibrant color, or a complete makeover, our skilled stylists are here to make sure your hair is always the center of attention. Step into our stylish salon and experience a hair journey that leaves you feeling confident and beautiful.">
+            </p>          
+            <img src="assets/hair.jpg" alt="Hair" class="category-images">
         </div>
-    
-        <div class="box">
-          <a href = "business.html" >Gloss & Glam</a>
-          <p>This is a short description of item 2.</p>
-          <img src="https://via.placeholder.com/250x150" alt="Item Image">
-         
-          <p> range</p>
+
+      <div class="box">
+        <div class = "title-price">
+            <!--Title of Business -->
+            <a href = "business.html" class = "title-link"> Lash Luxe Studio</a>
+            <!--Range of Prices -->
+            <span class="price-range">$45 - $200</span>
         </div>
-    
-        <div class="box">
-          <a href = "business.html" >Polished Perfection</a>
-          <p>This is a short description of item 3.</p>
-          <img src="https://via.placeholder.com/250x150" alt="Item Image">
-          <p> range</p>
+          <!--Show the first 100 words of the description-->
+          <p class="description" data-full="At Lash Luxe Studio, we specialize in creating flawless, natural-looking lashes that enhance your beauty and boost your confidence. From classic lash extensions to bold, dramatic looks, our skilled lash artists tailor each service to meet your unique style. Whether you're looking for a subtle lift or full-on glam, we provide a luxurious experience with stunning results every time.">
+          </p>          
+          <img src="assets/eyelash.jpg" alt="Lash" class="category-images">
         </div>
 
         <div class="box">
-            <a href = "business.html" >Sparkle & Shine Nails</a>
-            <p>This is a short description of item 1.</p>
-            <img src="https://via.placeholder.com/250x150" alt="Item Image">
-            <p> range</p>
+          <div class = "title-price">
+              <!--Title of Business -->
+              <a href = "business.html" class = "title-link">Henna & Harmony</a>
+              <!--Range of Prices -->
+              <span class="price-range">$15 - $130</span>
           </div>
+            <!--Show the first 100 words of the description-->
+            <p class="description" data-full=" At Henna & Harmony, we combine creativity with tradition to bring you exquisite henna designs that are perfect for every occasion. Whether it’s a special event or just a moment of self-expression, our expert henna artists will craft a design that reflects your unique style. With organic, safe henna, we promise rich, dark color that lasts. Join us for a relaxing, artistic experience and leave with a beautiful temporary tattoo that’s sure to impress.">
+            </p>          
+            <img src="assets/hennaArt.png" alt="henna" class="category-images">
+          </div> 
+  
 
           <script>
             const descriptions = document.querySelectorAll('.description');
@@ -74,7 +91,7 @@
               const toggleLink = document.createElement('a');
               toggleLink.href = '#';
               toggleLink.textContent = ' Read more';
-              toggleLink.style.color = 'blue';
+              toggleLink.style.color = '#8B0000';
               toggleLink.style.cursor = 'pointer';
           
               let expanded = false;
